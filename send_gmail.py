@@ -18,7 +18,8 @@ def main():
 
     # メールデータ(MIME)の作成 --- (*3)
     subject = "メール送信テスト"
-    body = "メール送信テスト2"
+    body = "pycharmからメール送信テストです。<br>一斉送信できるようになりたい。" \
+           "<br>まずは宛先１件バージョン"
     msg = MIMEText(body, "html")
     msg["Subject"] = subject
     msg["To"] = mail_to
