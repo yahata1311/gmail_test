@@ -1,3 +1,5 @@
+# ＜指定したアドレスにgmailからメールを送ってみよう編＞完成
+
 import os
 import smtplib
 import ssl
