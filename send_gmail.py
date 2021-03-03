@@ -3,23 +3,24 @@ import smtplib
 import ssl
 from email.mime.text import MIMEText
 
+# Gmailの環境設定（情報入力）
+gmail_address = os.environ['gmail_add']  # gmailアドレスをpycharmの環境変数に入れた。
+mail_key = os.environ['mail_key']  # gmailのPWをpycharmの環境変数に入れた。
+receive_add = os.environ['receive_add']  # 相手先のﾒｱﾄﾞをpycharmの環境変数に入れた。
+
+# Gmailの設定を書き込む
+gmail_account = gmail_address
+gmail_password = mail_key
+
+# メールの送信先
+mail_to = receive_add
+
 
 def main():
-    gmail_address = os.environ['gmail_add']  # gmailアドレスをpycharmの環境変数に入れた。
-    mail_key = os.environ['mail_key']  # gmailのPWをpycharmの環境変数に入れた。
-    receive_add = os.environ['receive_add']  # 相手先のﾒｱﾄﾞをpycharmの環境変数に入れた。
-
-    # Gmailの設定を書き込む
-    gmail_account = gmail_address
-    gmail_password = mail_key
-
-    # メールの送信先
-    mail_to = receive_add
-
     # メールデータ(MIME)の作成
-    subject = "メール送信テスト"
+    subject = "メール送信テスト"  # 件名の入力部分
     body = "pycharmからメール送信テストです。<br>一斉送信できるようになりたい。" \
-           "<br>まずは宛先１件バージョン"
+           "<br>まずは宛先１件バージョン"  # 本文の部分
     msg = MIMEText(body, "html")
     msg["Subject"] = subject
     msg["To"] = mail_to
