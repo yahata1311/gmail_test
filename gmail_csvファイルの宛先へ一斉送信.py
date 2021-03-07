@@ -43,10 +43,11 @@ def create_mail_body(full_name):
 よろしくお願いいたします。
 
 ━━━━━━━━━━━━━━━━━━━━━━━
-
 株式会社〇〇
-取締役副社長
-
+yahata
+add:
+tel:
+fax:
 ━━━━━━━━━━━━━━━━━━━━━━━━
 """.format(full_name)
 
