@@ -10,8 +10,8 @@ class Mailer:
 
     # 初期化
     def __init__(self, addr_to, subject, body):
-        self.password = "yuki7777"  # ← ここにGmailのログインパスワードを追加
-        self.addr_from = "yahata1311@gmail.com"  # ← ここにメールアドレスを追加
+        self.password = "******"  # ← ここにGmailのログインパスワードを追加
+        self.addr_from = "*****@gmail.com"  # ← ここにメールアドレスを追加
         self.addr_to = addr_to
         self.charset = "ISO-2022-JP"
         self.subject = subject
