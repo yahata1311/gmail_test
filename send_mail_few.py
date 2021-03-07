@@ -13,12 +13,12 @@ from email.mime.text import MIMEText  # 日本語送信ﾓｼﾞｭｰﾙ
 # Gmailの環境設定（情報入力）
 gmail_address = os.environ['gmail_add']  # gmailアドレスをpycharmの環境変数に入れた。
 mail_key = os.environ['mail_key']  # gmailのPWをpycharmの環境変数に入れた。
-receive_add = os.environ['receive_add']  # 相手先のﾒｱﾄﾞをpycharmの環境変数に入れた。
+# receive_add = os.environ['receive_add']  # 相手先のﾒｱﾄﾞをpycharmの環境変数に入れた。
 #
 # メールの送信先
 gmail_account = gmail_address
 gmail_password = mail_key
-mail_to = receive_add
+#mail_to = receive_add
 name = "矢羽田"
 #
 # 納期を自動でメールに記載したい時
