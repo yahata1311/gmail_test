@@ -4,13 +4,14 @@ import smtplib
 from email.mime.text import MIMEText
 
 
+
 class Mailer:
     """ メールを送信するクラス """
 
     # 初期化
     def __init__(self, addr_to, subject, body):
-        self.password = "******"  # ← ここにGmailのログインパスワードを追加
-        self.addr_from = "******@gmail.com"  # ← ここにメールアドレスを追加
+        self.password = "yuki7777"  # ← ここにGmailのログインパスワードを追加
+        self.addr_from = "yahata1311@gmail.com"  # ← ここにメールアドレスを追加
         self.addr_to = addr_to
         self.charset = "ISO-2022-JP"
         self.subject = subject
@@ -76,3 +77,4 @@ with open(filename, 'r') as f:
         body = create_mail_body(full_name)
         mailer = Mailer(addr_to, subject, body)
         mailer.send()
+
